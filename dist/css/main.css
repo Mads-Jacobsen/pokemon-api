@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Colors */
+html, body {
+  height: 100%;
+  background: #D3D3D3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#logo {
+  max-width: 40%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 350px;
+  height: 500px;
+  border-radius: 10%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.card h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+}
+.card .pokemon {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.card .pokemon .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .pokemon .info .shape-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 150px 150px;
+  z-index: 0;
+}
+.card .pokemon .info .shape-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 0 0 150px;
+  z-index: 0;
+}
+.card .pokemon .info .pokemon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 1rem 0;
+  z-index: 1;
+}
+.card .pokemon .info .pokemon-header .pokemon-number {
+  width: 80px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  margin-left: auto;
+  font-weight: 400;
+}
+.card .pokemon .info .img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card .pokemon .info .img-container #pokemonImg {
+  width: 200px;
+  height: 200px;
+}
+.card .pokemon .info .pokemon-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2.5rem;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+}
+.card .pokemon .info .pokemon-content span {
+  width: 130px;
+  background-color: #000;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+
+#btn {
+  margin-top: 2rem;
+  padding: 0.7rem 3rem;
+  border-radius: 5%;
+  background-color: #FFCC00;
+  color: #000;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
